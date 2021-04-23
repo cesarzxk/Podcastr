@@ -1,5 +1,5 @@
 
-# Podcastr
+# 🎙️ Podcastr
 Projeto Trilha ReactJS NLW5
 
 ## 📷 Screenshots
