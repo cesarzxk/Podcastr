@@ -1,9 +1,10 @@
+
 # Podcastr
 Projeto Trilha ReactJS NLW5
 
 ## 📷 Screenshots
 
-
+![NLW](https://user-images.githubusercontent.com/43748428/115903113-9849da00-a439-11eb-8a6b-7d9192acdc70.png)
 
 ## :rocket: Technologies
 
