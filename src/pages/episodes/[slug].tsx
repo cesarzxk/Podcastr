@@ -9,29 +9,34 @@ import {GetStaticProps, GetStaticPaths} from 'next';
 import styles from './episode.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePlayer } from '../../contexts/playerContext';
+import Head from 'next/head';
 
 
 
 
-type episode ={
+type Episode ={
     id: string;
     title: string;
     thumbnail: string;
     members: string;
-    publishedAT: string;
+    publishedAt: string;
     durationAsString: string;
+    duration:number;
     description: string;
     url: string;
   }
   
   type EpisodeProps = {
-    episode: episode[];
+    episode: Episode;
   }
 
 export default function Episode ({episode}:EpisodeProps){
+    const {play} = usePlayer();
     const router = useRouter();
     return(
         <div className={styles.episode}>
+            <Head> <title>{episode.title}</title> </Head>
             <div className={styles.thumbnailContainer}>
                 <Link href='/'>
                     <button type='button'>
@@ -39,7 +44,7 @@ export default function Episode ({episode}:EpisodeProps){
                     </button>
                 </Link>
                 <Image width={700} height={160}  src={episode.thumbnail} objectFit='cover'/>
-                <button type='button'>
+                <button type='button' onClick={()=>play(episode)}>
                     <img src="/play.svg" alt="Tocar episódio"/>
                 </button>
             </div> 
@@ -82,6 +87,7 @@ export const getStaticProps:GetStaticProps = async (ctx) => {
           members:data.members,
           publishedAT: format(parseISO(data.published_at), 's MMM yy', {locale:ptBR}),
           durationAsString: convertDurationToTimeString(Number(data.file.duration)),
+          duration:Number(data.file.duration),
           description:data.description,
           url:data.file.url
     
