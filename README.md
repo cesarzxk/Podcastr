@@ -1,6 +1,6 @@
 
 # 🎙️ Podcastr
-Projeto Trilha ReactJS NLW5
+Projeto da trilha ReactJS NLW5
 
 ## 📷 Screenshots
 
