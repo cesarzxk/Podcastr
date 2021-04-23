@@ -29,9 +29,9 @@ Second, run for start developement and start server in anoter terminal
 
 ```bash
 yarn server
+```
 
-and
-
+```bash
 yarn dev
 ```
 
@@ -46,7 +46,7 @@ To learn more about Expo, take a look at the following resources:
 - [Nextjs Documentation](https://nextjs.org/docs) - learn about Nextjs features and API.
 
 
-You can check out [the Nextjs GitHub repository]https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You can check out [the Nextjs GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## :memo: Licença
 This project is under the MIT license. See the [LICENSE](https://github.com/lukemorales/react-native-design-code/blob/master/LICENSE) for more information.
