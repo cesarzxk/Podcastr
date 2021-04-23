@@ -1,7 +1,8 @@
 .playerContainer{
-    width: 26.5rem;
+    width: 24.1rem;
     padding: 3rem 4rem;
     height: 100vh;
+
 
     background: var(--purple-500);
     color: var(--white);
@@ -33,7 +34,7 @@
 .emptyPlayer{
     width: 100%;
     height: 20rem;
-    border: 1.5px dashed var(--purple-300);
+    border: 3.5px dashed var(--purple-300);
     border-radius: 1.65rem;
     background: linear-gradient(143.8deg, rgba(145, 100, 250, 0.8) 0%, rgba(0,0,0,0) 100%);
 
